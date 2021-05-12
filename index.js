@@ -20,7 +20,7 @@ class Triangle extends Polygon{
     if((this.arr[0] + this.arr[1]) > this.arr[2]){
       return true;
     }
-    else{
+    else if((this.arr[0] + this.arr[1]) <= this.arr[2]){
       return false;
     }
   }
@@ -36,6 +36,6 @@ class Square extends Polygon{
     }
   }
   get area(){
-    return this.arr[0]**2
+    return this.arr[0]**2;
   }
 }
